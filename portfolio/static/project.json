@@ -1,0 +1,107 @@
+[{
+    "id":1,
+   "name" :"Password Generator",
+   "description":"Web application developed with Django to generate secure passwords for your respective needs.",
+   "url":"https://djangopassword.onrender.com/",
+   "img":"passwordgenerator.png",
+   "tecno":"PYTHON , DJANGO, HTML, CSS, BOOTSTRAP 5"
+},
+{
+    "id":2,
+   "name" :"Web Development Book Addresses",
+   "description":"Project developed to sell selected web development books, which are sent to the address of the book so that you can buy it on the indicated platform.",
+   "url":"https://cms2022w.000webhostapp.com/sitiowebphp/",
+   "img":"libro-ventas.png",
+   "tecno":"HTML, CSS , PHP, MYSQL, BOOTSTRAP 5, GIT ,GITHUB."
+}
+,
+{
+    "id":3,
+   "name" :"Tasks",
+   "description":"Proyecto para organizar tus tareas diarias  , como poder marcarlos como ya terminados y pendientes.",
+   "url":"https://django-task-crud.onrender.com/",
+   "img":"task-django.png",
+   "tecno":"PYTHON, DJANGO, HTML, CSS, JS, PostgreSQL.5, GIT ,GITHUB."
+}
+,
+{
+    "id":4,
+   "name" :"Calculadora",
+   "description":"Proyecto de calculadora con las operaciones básicas, desarrollados con tecnologías como : HTML, CSS , JS y SASS.",
+   "url":"https://calculadorabasicw.netlify.app",
+   "img":"calculadorajs.png",
+   "tecno":"HTML, CSS , JS y SASS"
+}
+,
+{
+    "id":5,
+   "name" :"Clon-Twitter",
+   "description":"Project developed as a skills practice that is focused on replicating functions of the Twitter application.",
+   "url":"https://clontwitter.onrender.com",
+   "img":"clontwitter.png",
+   "tecno":"PYTHON , DJANGO , HTML, JS, CSS, SQLITE3, GIT"
+}
+,
+{
+    "id":6,
+   "name" :"Tasks-pruebar",
+   "description":"I have developed a task management practice project, which creates, deletes and counts the tasks that are created in the DOM, then deletes them when updating the website.",
+   "url":"https://muwaldir.github.io/tareas/",
+   "img":"TASK-REACT.png",
+   "tecno":"REACT,  JS,  HTML, TAILWIND, GITHUB, GIT"
+}
+,
+{
+    "id":7,
+   "name" :"Penguin",
+   "description":"Project of an image of a Penguin developed with css and sass. ",
+   "url":"https://muwaldir.github.io/pinguino/",
+   "img":"pinguino.png",
+   "tecno":"CSS , SASS, HTML, GITHUB, GIT"
+}
+,
+{
+    "id":8,
+   "name" :"Design - Game - NINTENDO",
+   "description":"Design project of a Nintendo game website with Bootstrap 5.",
+   "url":"https://muwaldir.github.io/proyectoboostrap/",
+   "img":"juego-nintendo.png",
+   "tecno":"BOOTSTRAP 5, HTML, GITHUB, GIT"
+}
+,
+{
+    "id":9,
+   "name" :"Cat Game",
+   "description":"Project cat game , which consists of selecting a box from 9 and clicking on it will insert the letter X or the number 0 . The winner is the one who gets 3 boxes with the same graphic in a continuous way.",
+   "url":"https://muwaldir.github.io/juegoxo/",
+   "img":"cat-game.png",
+   "tecno":"JS, CSS , HTML, GIT, GITHUB"
+}
+,
+{
+    "id":10,
+   "name" :"Ozzy Drix",
+   "description":"Video project of the series Ozzy Drix season 1 and 2.",
+   "url":"https://waldirmerjildo.github.io/patyozzydrix/",
+   "img":"ozzy-drix.png",
+   "tecno":"JS, HTML, CSS, GITHUB, GIT"
+}
+,
+{
+    "id":11,
+   "name" :"Movie Details",
+   "description":"Project developed with api consumption of movies showing their details.",
+   "url":"https://pelisdetails.netlify.app",
+   "img":"movie-details.png",
+   "tecno":"REACT, JS, HTML,CSS, BOOTSTRAP 5,GITHUB, NETLIFY"
+}
+,
+{
+    "id":12,
+   "name" :"Simple and Compound Interest Calculator",
+   "description":"Simple and compound interest calculator project developed for managing investment or expenses that is generated through interest..",
+   "url":"https://waldirmerjildo.github.io/curso_practico_javascrip/",
+   "img":"inters-simpleycompuesto.png",
+   "tecno":"JS, HTML, CSS, GITHUB, GIT"
+}
+]

@@ -28,10 +28,13 @@
 
 
 
-<div class="row my-4 text-center ele">
+<div class="row my-4 text-center ele projects">
+
+ 
+  
   <h3>My Projects</h3>
  
-
+<!-- 
   {% for project in projects %}
 
   <div class="col-md-4 col-lg-3 p-4  box " >
@@ -41,8 +44,7 @@
   
         <div class="card-body">
           <h3 class="title">{{project.title}}</h3>
-          <!-- <p>{{project.description | truncatechars:50}}</p> -->
-          <!-- <h3 class="d-flex justify-content-center">Technologies Used </h3> -->
+          
         <br>
           <P class="tec btn text-light bg-success fw-bold" >{{ project.tec }}</P>
           
@@ -66,7 +68,7 @@
 
  
   
-  {% endfor %}
+  {% endfor %} -->
 </div>
 
 <div class="row skills d-flex justify-content-center ">
@@ -108,7 +110,7 @@
 <!-- Modal Body -->
 <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
 <div class="modales" style="display: block;">
-  {% for project in projects %}
+  <!-- {% for project in projects %}
   <div class="modal fade " id="A{{project.id}}" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
     <div class="modal-dialog " role="document">
       <div class="modal-content">
@@ -116,31 +118,22 @@
           <h5 class="modal-title" id="modalTitleId">Project: {{project.title}}</h5>
             <button type="button" class="btn-close btn-sm  " data-bs-dismiss="modal" aria-label="Close" style="background-color: red;" ></button>
         </div>
-        <div class="modal-body" >
+        <div class="modal-body" > -->
           <!-- Body -->
-          <img  class="img-fluid"  src="{{project.image.url}}" alt="">
+          <!-- <img  class="img-fluid"  src="{{project.image.url}}" alt="">
        
           <p>{{project.description}}</p>
         <div class="modal-footer d-flex justify-content-center">
           <h3 class="d-flex justify-content-center">Technologies Used </h3>
         <br>
           <P class="tec btn text-light bg-success fw-bold" >{{ project.tec }}</P>
-          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-          <!-- <button type="button" class="btn btn-primary">Save</button> -->
-          <!-- {% if project.url %}
-
-          <a
-            href="{{project.url}}"
-            class="btn btn-secondary rounded-3 btn-sm"
-            target="_blank"
-            >{{project.url}}</a>
-          {% endif %} -->
+          
         </div>
       </div>
     </div>
   </div>
   </div>
-  {% endfor %}
+  {% endfor %} -->
 </div>
 
 
