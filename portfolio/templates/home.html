@@ -1,0 +1,155 @@
+{% extends 'layout.html' %} {% block content %} {% load static %}
+<header>
+  <div class="row ele">
+    <div class="col-md-4 pt-5 pe-5">
+      <img
+        class="img-fluid"
+        src="{% static 'portfolio/img_portfolio_perfil.jpg' %}"
+        alt=""
+      />
+    </div>
+    <div class="col-md-8 pt-5" >
+      <h1 class="name">I am <span><strong class="name-strong" >WALDIR MERJILDO</strong></span> </h1>
+    <h1 class="animate-charcter">I am full stack <br> developer</h1>
+      <p class="description">
+        Hi, I am a systems engineer specialised in front-end and backend development.
+      </p>
+      <a
+        href="{% static 'portfolio/WALDIR_MERJILDO_UBALDO_CV.pdf' %}"
+        class="btn btn-primary btn-lg rounded-0 my-3"
+        target="_blank"
+      >
+        Download CV
+      </a>
+    </div>
+  </div>
+</header>
+<hr style="color: white;">
+
+
+
+<div class="row my-4 text-center ele">
+  <h3>My Projects</h3>
+ 
+
+  {% for project in projects %}
+
+  <div class="col-md-4 col-lg-3 p-4  box " >
+    <div class="card bg-black card-project tarjeta" >
+      <div data-bs-toggle="modal" data-bs-target="#A{{project.id}}">
+        <img class="card-img-top img-fluid imgProject" src="{{project.image.url}}" alt="" />
+  
+        <div class="card-body">
+          <h3 class="title">{{project.title}}</h3>
+          <!-- <p>{{project.description | truncatechars:50}}</p> -->
+          <!-- <h3 class="d-flex justify-content-center">Technologies Used </h3> -->
+        <br>
+          <P class="tec btn text-light bg-success fw-bold" >{{ project.tec }}</P>
+          
+        </div>
+
+      </div>
+      <div class="card-footer">
+        {% if project.url %}
+
+        <a
+          href="{{project.url}}"
+          class="btn btn-secondary rounded-1 btn-sm link-web"
+          target="_blank"
+          >website</a>
+        {% endif %}
+      </div>
+    </div>
+    
+  </div>
+  
+
+ 
+  
+  {% endfor %}
+</div>
+
+<div class="row skills d-flex justify-content-center ">
+  <h2 class="my-4 text-center ele">Skills Set</h2>
+  
+</div>
+
+<div class="row mt-5 pb-5">
+  <div class="col  text-light ">
+    <h2 class="text-center mb-3">Contact</h2>
+    <div class="col d-flex justify-content-around">
+
+      <a class="mx-2 h2"  href="https://github.com/MUwaldir" target="_blank"><i class="fa-brands fa-github"></i></a>
+        
+    
+  
+    
+      
+    <a class="btn btn-primary btn " href="{% static 'portfolio/WALDIR_MERJILDO_UBALDO_CV.pdf' %}"  target="_blank">Download CV</a>
+    <a class="mx-2 h2 "  href="https://www.linkedin.com/in/waldir-ruben-merjildo-ubaldo-819170215/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+               
+    </div>
+    
+  
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Modal trigger button -->
+<!-- <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+  Launch
+</button> -->
+
+<!-- Modal Body -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div class="modales" style="display: block;">
+  {% for project in projects %}
+  <div class="modal fade " id="A{{project.id}}" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content">
+        <div class="modal-header " >
+          <h5 class="modal-title" id="modalTitleId">Project: {{project.title}}</h5>
+            <button type="button" class="btn-close btn-sm  " data-bs-dismiss="modal" aria-label="Close" style="background-color: red;" ></button>
+        </div>
+        <div class="modal-body" >
+          <!-- Body -->
+          <img  class="img-fluid"  src="{{project.image.url}}" alt="">
+       
+          <p>{{project.description}}</p>
+        <div class="modal-footer d-flex justify-content-center">
+          <h3 class="d-flex justify-content-center">Technologies Used </h3>
+        <br>
+          <P class="tec btn text-light bg-success fw-bold" >{{ project.tec }}</P>
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <!-- <button type="button" class="btn btn-primary">Save</button> -->
+          <!-- {% if project.url %}
+
+          <a
+            href="{{project.url}}"
+            class="btn btn-secondary rounded-3 btn-sm"
+            target="_blank"
+            >{{project.url}}</a>
+          {% endif %} -->
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+<!-- Optional: Place to the bottom of scripts -->
+<script>
+  const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+
+</script>
+
+
+
+{% endblock %}
