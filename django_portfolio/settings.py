@@ -22,10 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# cambair  aqui
 # SECRET_KEY = "django-insecure-=cv7!3+3k^4w=2hds86@&4oeyox$hd8lx@wz&h8mpdeu_v4q9+"
 SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNING: don't run with debug turned on in production!}
+# cambair aqui
 # DEBUG = True
 DEBUG = 'RENDER' not in os.environ
 
@@ -80,12 +82,13 @@ WSGI_APPLICATION = "django_portfolio.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
+# cambiar aqui
 DATABASES = {
     # "default": {
     #     "ENGINE": "django.db.backends.sqlite3",
     #     "NAME": BASE_DIR / "db.sqlite3",
     # }
+
 
     'default': dj_database_url.config(
         default='postgresql://postgress:postgress@localhost/postgress',

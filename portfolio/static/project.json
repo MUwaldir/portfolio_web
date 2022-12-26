@@ -26,11 +26,11 @@
 ,
 {
     "id":4,
-   "name" :"Calculadora",
-   "description":"Proyecto de calculadora con las operaciones básicas, desarrollados con tecnologías como : HTML, CSS , JS y SASS.",
-   "url":"https://calculadorabasicw.netlify.app",
-   "img":"calculadorajs.png",
-   "tecno":"HTML, CSS , JS y SASS"
+   "name" :"Task AWS",
+   "description":"Proyecto de Tareas desarrollado en AWS",
+   "url":"https://dev.d3awt3wwsjvu25.amplifyapp.com/",
+   "img":"taskaws.png",
+   "tecno":"HTML, CSS , JS , AWS , Amplify, Vue.js , DynamoDB, GraphQL"
 }
 ,
 {
@@ -103,5 +103,13 @@
    "url":"https://waldirmerjildo.github.io/curso_practico_javascrip/",
    "img":"inters-simpleycompuesto.png",
    "tecno":"JS, HTML, CSS, GITHUB, GIT"
+},
+{
+    "id":13,
+   "name" :"Calculadora",
+   "description":"Proyecto de calculadora con las operaciones básicas, desarrollados con tecnologías como : HTML, CSS , JS y SASS.",
+   "url":"https://calculadorabasicw.netlify.app",
+   "img":"calculadorajs.png",
+   "tecno":"HTML, CSS , JS y SASS"
 }
 ]

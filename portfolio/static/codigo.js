@@ -3,6 +3,11 @@
 const skills = document.querySelector(".skills");
 
 const skillUrl = [
+  "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png",
+  "https://docs.amplify.aws/assets/ogp.jpg",
+  "https://www.dynamodbguide.com/logos/dynamodb.svg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1200px-GraphQL_Logo.svg.png",
+  "https://i.morioh.com/201020/5c2c106b.webp",
   "https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png",
   "https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-0.png",
@@ -24,6 +29,11 @@ const skillUrl = [
 ];
 
 const urls = [
+  "https://aws.amazon.com/",
+  "https://aws.amazon.com/es/amplify/",
+  "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+  "https://graphql.org/",
+  "https://vuejs.org/",
   "https://getbootstrap.com/docs/5.0/getting-started/introduction/",
   "https://www.python.org/",
   "https://developer.mozilla.org/en-US/docs/Learn/HTML",
